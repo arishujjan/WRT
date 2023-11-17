@@ -1,0 +1,116 @@
+.q{
+    text-align: center;
+    background-color: aqua;
+
+    font-size: 43px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+   
+ 
+.q3{
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px  50px ;
+    
+
+}
+.q4
+{
+    
+    display: grid;
+    grid-template-columns:600px 600px 600px 600px;
+}
+.q5{
+    
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.q6{
+    
+    display: grid;
+    grid-template-columns:450px 450px 1fr;
+    
+}
+.q7{
+    
+    background-color: aquamarine;
+    color: black;
+margin-right: 25px;
+}
+.q8{
+
+    background-color: aquamarine;
+    color: black;
+}
+.q9{margin-top: 100px;
+    margin-left: 80px;
+    padding: 10px  ;
+    background-color: rgb(167, 116, 214);
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+}
+.q9 :hover{
+    background-color: rgb(0, 255, 115);
+    box-shadow:15px 15px 25px ;
+}
+.e{
+background-color: white;
+}
+.e1{
+    
+    width: 500px;
+    height: 350px;
+    margin: 20px auto;
+    display: block;
+}
+.e2{
+    color: yellow;
+
+}
+.e3{
+    background-color: blue;
+    color: black;
+}
+.e4{
+    background-color: rgb(219, 190, 155);
+}
+.button2:hover{
+    color: #333 ;
+    background-color: #fff ;
+}
+
+.button2 {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;}
+.e5{
+    color: yellow;
+}
+.e6{
+    text-align: center;
+
+}.e7{
+    margin-top: 40PX;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    color: black;
+    background-color: rgb(224, 223, 223);
+}
+.e8:hover{
+    text-decoration: underline;
+cursor: pointer;
+}
+.e9{
+    font-style: bold;
+}
+.w2{
+    text-align: center;
+
+}

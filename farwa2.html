@@ -1,0 +1,180 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login profile</title>
+    <style>
+        #login-modal {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: arial, sans-serif;
+            border-radius: 5px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+        #login-modal .modal-body {
+            margin-bottom: 20px;
+        }
+        #login-modal .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #login-modal .subtitle {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #777;
+        }
+        #login-modal form span, #login-modal form button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #login-modal form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        #login-modal form input:focus {
+            outline: none;
+            border-color: #2196f3;
+        }
+        #login-modal form .button {
+            background-color: #2196f3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        #login-modal form .button:hover {
+            background-color: #0c7cd5;
+        }
+        #login-modal form .social-auth {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+        #login-modal form .social-auth img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        #login-modal form .social-auth .middle {
+            vertical-align: middle;
+        }
+        #login-modal form .more-options {
+            background-color: transparent;
+            color: #777;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+        #login-modal form .more-options:hover {
+            color: #555;
+        }
+        #login-modal .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            background-color: transparent;
+            color: #444;
+            border: none;
+            cursor: pointer;
+        }
+        #login-modal .close:hover {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    
+<div>
+
+
+
+
+
+
+    <dialog id="login-modal" open="">
+        <div class="modal-body">
+            <p class="title"
+            >Login to farwa website
+
+            </p>
+            <p class="subtitle">
+
+            </p>
+            <form style="text-align:center">
+
+                <span style="display:none" id="moreLoginOptions">
+
+                  <input id="login-user-email" type="email" placeholder="email">
+                 
+                  <p id="login-user-email-error" class="hide">
+
+                  </p>
+                  <input id="login-user-password" type="password" placeholder="password">
+
+                  <p id="login-user-password-error" class="hide">
+
+                  </p>
+                  <button class="button" onclick="login(event)">
+                    Login
+                </button>
+                  <p class="subtitle">Forgot password? 
+                    <a href="javascript:void();" style="color: #3a90e0; text-decoration: underline;" onclick="resetPassword(event)">
+                        Click here
+                    </a></p>
+                  <button class="button social-auth" onclick="social_login(event, 'github')">
+                    <span class="middle">
+                        Login with GitHub
+                    </span>
+                </button>
+                  <button class="button social-auth" onclick="social_login(event, 'linkedin')">
+                      "middle">Login with LinkedIn
+                    </span>
+                </button>
+            
+                </span>
+                <button class="button social-auth" onclick="social_login(event, 'google')" fdprocessedid="ky8jlh">  
+                      <span class="middle">
+                        Login with Google
+                    </span>
+                </button>
+                <button class="button more-options" onclick="document.getElementById('moreLoginOptions').style.display='inline'; this.remove(); return false" fdprocessedid="oa06na">
+                    more login options
+                </button>
+
+
+                <p class="subtitle">Don't have an account?
+                     <a href="javascript:void();" style="color: #c764ec; text-decoration: underline;" onclick="loginSwitchToSignup(event)"> 
+                        Signup here
+                    </a>
+                </p>
+            </form>
+        </div>
+        <button id="close-login" class="close" type="button" fdprocessedid="o1lkyc">
+            ×
+        </button>
+    </dialog>
+</div>
+</body>
+</html>
